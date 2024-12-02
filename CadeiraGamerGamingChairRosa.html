@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes da Cadeira Moderna</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        header {
+            background-color: #6b0d0d;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+        .details {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .details h2 {
+            text-align: center;
+            color: #333;
+        }
+        .description {
+            text-align: justify;
+            margin-bottom: 20px;
+            color: #666;
+        }
+        .price {
+            font-size: 24px;
+            font-weight: bold;
+            color: #6b0d0d;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .gallery {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+            justify-content: center;
+        }
+        .gallery img {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+        .main-image {
+            width: 80%;
+            height: auto;
+            border-radius: 8px;
+            margin: 0 auto 20px;
+            display: block;
+        }
+        .button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #990101;
+            color: white;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            text-align: center;
+            width: 80%;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #500101;
+        }
+        .back-button {
+            margin: 10px auto;
+            padding: 10px 20px;
+            background-color: #990101;
+            color: white;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            text-align: center;
+            width: 50%;
+            text-decoration: none;
+            display: block;
+            text-align: center;
+        }
+        .back-button:hover {
+            background-color: #500101;
+        }
+    </style>
+    <script>
+        function changeMainImage(src) {
+            document.getElementById('main-image').src = src;
+        }
+    </script>
+    <link rel="icon" href="img/cadeira-de-mesa.png" type="image/png">
+</head>
+<body>
+    <header>
+        <h1>Detalhes da Cadeira Moderna</h1>
+    </header>
+
+    <div class="details">
+        <h2>Cadeira Moderna</h2>
+        <img id="main-image" src="img/cadeira10 (1).jpg" alt="Cadeira Moderna" class="main-image">
+        
+        <p class="price">R$ 599,00</p>
+        
+        <p class="description">
+            A Cadeira Gamer Gaming Chair é a escolha perfeita para quem busca conforto, estilo e performance em sessões de jogo intensas. Com um design moderno e elegante, nas cores vibrantes de rosa e preto, ela se destaca no ambiente e oferece o máximo de conforto durante horas de uso.
+            Sua estrutura ergonômica garante o suporte ideal para a coluna, com ajuste de altura, reclinação e apoio para os braços, permitindo que você personalize a cadeira conforme suas necessidades. O estofado em material de alta qualidade oferece resistência e durabilidade, enquanto o revestimento em couro sintético facilita a limpeza e proporciona uma sensação de suavidade.
+            Ideal para gamers que buscam não apenas um assento confortável, mas também um produto que combine perfeitamente com seu estilo único. A Cadeira Gaming Chair é a aliada perfeita para suas maratonas de jogos ou sessões de trabalho, garantindo um desempenho excepcional e um visual arrojado.
+        </p>
+        
+        <div class="gallery">
+            <img src="img/cadeira10 (1).jpg" alt="Cadeira Moderna 1" onclick="changeMainImage(this.src)">
+            <img src="img/cadeira10 (2).jpg" alt="Cadeira Moderna 2" onclick="changeMainImage(this.src)">
+        </div>
+        
+        <a href="https://wa.me/5515991009373?text=Quero%20comprar%20a%20Cadeira%20Moderna%20por%20R$599,00%20que%20vi%20no%20site!" target="_blank" class="button">Comprar via WhatsApp</a>
+        <a href="javascript:history.back()" class="back-button">Voltar</a>
+    </div>
+</body>
+</html>
