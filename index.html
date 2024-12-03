@@ -14,8 +14,27 @@
         header {
             background-color: #6b0d0d;
             color: white;
-            text-align: center;
-            padding: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1rem 2rem;
+        }
+        .menu {
+            display: flex;
+            gap: 1rem;
+        }
+        .menu a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        .menu a:hover {
+            color: #cccccc;
+        }
+        .logo {
+            height: 50px; /* Altura recomendada para a logo */
+            object-fit: contain;
         }
         .container {
             display: flex;
@@ -72,92 +91,91 @@
             background-color: #771515;
             color: white;
         }
-        .ttf {
-        position: absolute; /* Garante o controle do posicionamento */
-        left: 20px;         /* Margem menor para o lado esquerdo */
-        top: 10px;          /* Ajuste para descer a posição */
-        height: 93px;       /* Reduz a altura para um tamanho mais proporcional */
-        width: 110px;        /* Permite que a largura seja ajustada automaticamente mantendo a proporção */
-        max-width: 120px;   /* Define um limite máximo de largura */
-        object-fit: contain; /* Garante que a imagem seja dimensionada corretamente */
-    }
-
-
     </style>
-    <link rel="icon" href="img/cadeira-de-mesa.png" type="image/png">
+     <link rel="icon" href="img/cadeira-de-mesa.png" type="image/png">
+
 </head>
 <body>
+    
     <header>
-        
-        <h1>CADEIRAS GAMER</h1>
+        <img src="img/ttf.png" alt="Logo da empresa" class="logo">
+        <h1>CADEIRAS GAMER - ADQUIRA JÁ</h1>
+        <nav class="menu">
+            <a href="https://ttfalimentos.com.br/">Ir ao Site</a>
+            <a href="https://bio.site/entreemcontatottf">Entre em Contato</a>
+        </nav>
     </header>
 
     <div class="container">
-        <div class="card">
-            <img src="img/C1.jpg" alt="Cadeira Moderna">
-            <h3>Cadeira Gamer Gaming Chair - Rosa e Preto</h3>
-            <p> A Cadeira Gamer Gaming Chair é a escolha perfeita para quem busca conforto...</p>
-            <a href="CadeiraGamerGamingChairRosa.html" class="button">Mais Informações</a>
+        <div class="container">
+            <div class="card">
+                <img src="img/C1.jpg" alt="Cadeira Moderna">
+                <h3>Cadeira Gamer Gaming Chair - Rosa e Preto</h3>
+                <p> A Cadeira Gamer Gaming Chair é a escolha perfeita para quem busca conforto...</p>
+                <a href="CadeiraGamerGamingChairRosa.html" class="button">Mais Informações</a>
+            </div>
+            <div class="card">
+                <img src="img/3.jpg" alt="Cadeira Clássica">
+                <h3>Cadeira Gamer Gaming Chair - Azul e Preto</h3>
+                <p>A Cadeira Gamer Gaming Chair é a escolha perfeita para quem busca conforto...</p>
+                <a href="CadeiraGamerGamingChairAzul.html" class="button">Mais Informações</a>
+            </div>
+            <div class="card">
+                <img src="img/6.jpg" alt="Cadeira Moderna">
+                <h3>Cadeira Gamer Gaming Chair - Branco e Preto</h3>
+                <p>A Cadeira Gamer Gaming Chair é a escolha perfeita para quem busca conforto...</p>
+                <a href="CadeiraGamerGamingChairBranca.html" class="button">Mais Informações</a>
+            </div>
+            <div class="card">
+                <img src="img/12.jpg" alt="Cadeira Clássica">
+                <h3>Cadeira Gamer Gaming Chair - Vermelho e Preto</h3>
+                <p>A Cadeira Gamer Gaming Chair é a escolha perfeita para quem busca conforto...</p>
+                <a href="CadeiraGamerGamingChairVermelha.html" class="button">Mais Informações</a>
+            </div>
+            <div class="card">
+                <img src="img/gb.jpg" alt="Cadeira Moderna">
+                <h3>Cadeira Gamer Gaming Chair - Preto</h3>
+                <p>A Cadeira Gamer Gaming Chair é a escolha perfeita para quem busca conforto...</p>
+                <a href="CadeiraGamerGamingChairPreto.html" class="button">Mais Informações</a>
+            </div>
+            <div class="card">
+                <img src="img/ac.jpg" alt="Cadeira Clássica">
+                <h3>Cadeira Gamer Supreme Gaming - Azul</h3>
+                <p>A Cadeira Gamer Supreme Gaming é a escolha perfeita para quem busca conforto...</p>
+                <a href="CadeiraGamerSupremeGamingAzul.html" class="button">Mais Informações</a>
+            </div>
+            <div class="card">
+                <img src="img/34.jpg" alt="Cadeira Moderna">
+                <h3>Cadeira Gamer Supreme Gaming - Vermelho e Cinza</h3>
+                <p>A Cadeira Gamer Supreme Gaming é a escolha perfeita para quem busca conforto...</p>
+                <a href="CadeiraGamerSupremeGamingVermelho.html" class="button">Mais Informações</a>
+            </div>
+            <div class="card">
+                <img src="img/v.jpg" alt="Cadeira Clássica">
+                <h3>Cadeira Gamer Supreme Gaming - Verde e Cinza</h3>
+                <p>A Cadeira Gamer Supreme Gaming é a escolha perfeita para quem busca conforto...</p>
+                <a href="CadeiraGamerSupremeGamingVerde.html" class="button">Mais Informações</a>
+            </div>
+            <div class="card">
+                <img src="img/p.jpg" alt="Cadeira Moderna">
+                <h3>Cadeira Gamer Supreme Gaming - Preto e Branco</h3>
+                <p>A Cadeira Gamer Supreme Gaming é a escolha perfeita para quem busca conforto...</p>
+                <a href="CadeiraGamerSupremeGamingBranco.html" class="button">Mais Informações</a>
+            </div>
+            <div class="card">
+                <img src="img/c.jpg" alt="Cadeira Clássica">
+                <h3>Cadeira Gamer Supreme Gaming - Cinza e Preto</h3>
+                <p>A Cadeira Gamer Supreme Gaming é a escolha perfeita para quem busca conforto...</p>
+                <a href="CadeiraGamerSupremeGamingCinza.html" class="button">Mais Informações</a>
+            </div>       
+           
         </div>
-        <div class="card">
-            <img src="img/3.jpg" alt="Cadeira Clássica">
-            <h3>Cadeira Gamer Gaming Chair - Azul e Preto</h3>
-            <p>A Cadeira Gamer Gaming Chair é a escolha perfeita para quem busca conforto...</p>
-            <a href="CadeiraGamerGamingChairAzul.html" class="button">Mais Informações</a>
-        </div>
-        <div class="card">
-            <img src="img/6.jpg" alt="Cadeira Moderna">
-            <h3>Cadeira Gamer Gaming Chair - Branco e Preto</h3>
-            <p>A Cadeira Gamer Gaming Chair é a escolha perfeita para quem busca conforto...</p>
-            <a href="CadeiraGamerGamingChairBranca.html" class="button">Mais Informações</a>
-        </div>
-        <div class="card">
-            <img src="img/12.jpg" alt="Cadeira Clássica">
-            <h3>Cadeira Gamer Gaming Chair - Vermelho e Preto</h3>
-            <p>A Cadeira Gamer Gaming Chair é a escolha perfeita para quem busca conforto...</p>
-            <a href="CadeiraGamerGamingChairVermelha.html" class="button">Mais Informações</a>
-        </div>
-        <div class="card">
-            <img src="img/gb.jpg" alt="Cadeira Moderna">
-            <h3>Cadeira Gamer Gaming Chair - Preto</h3>
-            <p>A Cadeira Gamer Gaming Chair é a escolha perfeita para quem busca conforto...</p>
-            <a href="CadeiraGamerGamingChairPreto.html" class="button">Mais Informações</a>
-        </div>
-        <div class="card">
-            <img src="img/ac.jpg" alt="Cadeira Clássica">
-            <h3>Cadeira Gamer Supreme Gaming - Azul</h3>
-            <p>A Cadeira Gamer Supreme Gaming é a escolha perfeita para quem busca conforto...</p>
-            <a href="CadeiraGamerSupremeGamingAzul.html" class="button">Mais Informações</a>
-        </div>
-        <div class="card">
-            <img src="img/34.jpg" alt="Cadeira Moderna">
-            <h3>Cadeira Gamer Supreme Gaming - Vermelho e Cinza</h3>
-            <p>A Cadeira Gamer Supreme Gaming é a escolha perfeita para quem busca conforto...</p>
-            <a href="CadeiraGamerSupremeGamingVermelho.html" class="button">Mais Informações</a>
-        </div>
-        <div class="card">
-            <img src="img/v.jpg" alt="Cadeira Clássica">
-            <h3>Cadeira Gamer Supreme Gaming - Verde e Cinza</h3>
-            <p>A Cadeira Gamer Supreme Gaming é a escolha perfeita para quem busca conforto...</p>
-            <a href="CadeiraGamerSupremeGamingVerde.html" class="button">Mais Informações</a>
-        </div>
-        <div class="card">
-            <img src="img/p.jpg" alt="Cadeira Moderna">
-            <h3>Cadeira Gamer Supreme Gaming - Preto e Branco</h3>
-            <p>A Cadeira Gamer Supreme Gaming é a escolha perfeita para quem busca conforto...</p>
-            <a href="CadeiraGamerSupremeGamingBranco.html" class="button">Mais Informações</a>
-        </div>
-        <div class="card">
-            <img src="img/c.jpg" alt="Cadeira Clássica">
-            <h3>Cadeira Gamer Supreme Gaming - Cinza e Preto</h3>
-            <p>A Cadeira Gamer Supreme Gaming é a escolha perfeita para quem busca conforto...</p>
-            <a href="CadeiraGamerSupremeGamingCinza.html" class="button">Mais Informações</a>
-        </div>
-       
+    
+    
     </div>
 
     <footer>
-        <p>© 2024 Galeria de Cadeiras. Todos os direitos reservados.</p>
+        <p>© 2024 TTF ALIMENTOS. Todos os direitos reservados.</p>
     </footer>
 </body>
 </html>
